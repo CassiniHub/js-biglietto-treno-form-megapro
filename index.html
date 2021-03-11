@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/placeholder.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <h2>Calcola il prezzo del tuo biglietto</h2>
+            <div>
+                <!-- input -->
+                <div class="input">
+
+                    <div>
+                        <label for="name">Nome e cognome</label>
+                        <input type="text" id="name">
+                    </div>
+
+                    <div>
+                        <label for="km">Km da percorrere</label>
+                        <input type="number" id="km">
+                    </div>
+
+                    <div>
+                        <label for="age">Fascia d'età</label>
+                        <select name="age" id="age">
+                            
+                            <option selected value="">
+                                Seleziona un'opzione
+                            </option>
+
+                            <option value="minorenne">
+                                Minorenne
+                            </option>
+    
+                            <option value="maggiorenne">
+                                Maggiorenne
+                            </option>
+    
+                            <option value="over65">
+                                Over 65
+                            </option>
+                        </select>
+                    </div>
+                    
+                </div>
+
+                <!-- buttons -->
+                <div class="actions">
+                    <input id="generate" type="button" value="Genera">
+
+                    <input id="undo" type="button" value="Annulla">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>Il tuo biglietto</h2>
+            <div>
+                <h3>
+                    Dettagli passeggeri
+                </h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome <br>Passeggero</th>
+                            <th>Offerta</th>
+                            <th>Carrozza</th>
+                            <th>Codice <br>CP</th>
+                            <th>Costo <br>biglietto</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <td id="passenger-name"></td>
+                        <td id="special-offer"></td>
+                        <td id="wagon"></td>
+                        <td id="cp"></td>
+                        <td id="total-price"></td>
+                    </tbody>
+
+                    <tfoot>
+
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
